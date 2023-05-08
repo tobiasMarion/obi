@@ -29,7 +29,7 @@ O repositório é organizado por ano, cada ano possui três fases e os exercíci
 ```
 ├── nivel/
 │   ├── ano/
-│   │   ├── fase1/
+│   │   ├── fase/
 │   │   │   ├── exercicio/
 │   │   │   │   ├── enunciado.md
 │   │   │   │   ├── solucao.arquivo

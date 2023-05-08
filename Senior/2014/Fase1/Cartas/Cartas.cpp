@@ -1,24 +1,27 @@
+//Bibliotecas
 #include <iostream>
 #include <sstream>
 #include <vector>
+
+//
 using namespace std;
 
 int main()
-{
+{   
     string str;
     vector<int> cartas;
 
     cout << "Insira o valor da cartas na sequencia desejada(separadas por espaço): " << endl;
-    getline(cin, str, '\n');
+    getline(cin, str, '\n'); //Comando para ler a linha inteira, incluindo espaços
     
-    stringstream ss(str);
+    stringstream ss(str); //Objeto do tipo stream
 
-    while(ss >> str)
+    while(ss >> str) // Extraindo as substrings do objeto ss, e transformando em um vetor de inteiros
     {   
         cartas.push_back(stoi(str));
     }
     
-    if (cartas[0] < cartas[1])
+    if (cartas[0] < cartas[1]) // Verifica a ordenação das cartas
     {
         for (int i = 1; i < cartas.size(); i++)
         {   
