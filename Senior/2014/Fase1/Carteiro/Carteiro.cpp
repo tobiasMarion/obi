@@ -9,14 +9,17 @@ int main(){
     string str;
     vector<int> n;
     vector<int> casas;
+    vector<int> entregas;
     
     cout << "Insira o respectivamente o numero de casas e encomendas: " << endl;
     getline(cin, str);
     n = split(str);
     cout << "Insira a sequencia do numero das casas: " << endl;
     getline(cin, str);
-    casas 
-
+    casas = split(str);
+    cout << "Insira a seuqencia de casas onde as encomendas devem ser entregues: " << endl;
+    getline(cin, str);
+    entregas = split(str);
 
 
     return 0;
